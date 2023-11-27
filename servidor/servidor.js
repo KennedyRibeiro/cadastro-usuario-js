@@ -18,6 +18,8 @@ app.get('/', (req, res) => {
     res.sendFile(diretorioHtml);
 });
 
+const rotasUsuario = require('./rotas/rotasUsuario');
+app.use('/usuario', rotasUsuario);
 
 const PORTA = 3000;
 
