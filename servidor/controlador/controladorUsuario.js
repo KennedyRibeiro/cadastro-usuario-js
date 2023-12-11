@@ -5,3 +5,9 @@ exports.criar = (req, res) => {
         res.json(usuario);
     });
 };
+
+exports.listar = (req, res) => {
+    Usuario.findAll().then((usuarios) => {
+        res.json(usuarios);
+    });
+};

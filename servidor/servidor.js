@@ -19,7 +19,7 @@ app.get('/', (req, res) => {
 });
 
 const rotasUsuario = require('./rotas/rotasUsuario');
-app.use('/usuario', rotasUsuario);
+app.use('/usuarios', rotasUsuario);
 
 const PORTA = 3000;
 
