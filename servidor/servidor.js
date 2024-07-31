@@ -26,4 +26,3 @@ const PORTA = 3000;
 app.listen(PORTA, () => {
     console.log(`Servidor em execução na porta ${PORTA}`);
 });
-
